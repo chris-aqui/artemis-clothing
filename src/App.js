@@ -31,6 +31,7 @@ class App extends Component {
 						currentUser: {
 							id: snapShot.id,
 							...snapShot.data()
+							// have to call `.data()` to actually see the data on the snapshot
 						}
 					});
 
@@ -38,6 +39,7 @@ class App extends Component {
 				});
 			}
 
+			// when user logs out, set current user to null
 			this.setState({ currentUser: userAuth });
 		});
 	}
