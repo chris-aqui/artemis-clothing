@@ -37,6 +37,7 @@ const Header = ({ currentUser, hidden }) => (
 	</div>
 );
 
+// destructuring nested values
 const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
 	currentUser,
 	hidden
